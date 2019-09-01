@@ -1,0 +1,98 @@
+/* for desktop */
+@media screen and (min-width: 600px){
+  .cover{
+    background-image: linear-gradient(-20deg, #0f329b 45%, #58c3d8 0);
+    height:150px;
+  }
+
+  .profile-pic{
+    border-radius: 50%;
+    max-width: 200px;
+    display: block;
+    position: relative;
+    top:-30px;
+
+  }
+
+  .intro-flex{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    padding: 10px;
+  }
+
+  .intro-container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .social{
+    text-align: center;
+    width: 200px;
+    top:-10px;
+    position:relative;
+    }
+
+  .social-desc{
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .2rem;
+  }
+
+  .social .social-pic{
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .icon{
+    width: 30px;
+    margin: 10px;
+    margin-top: 0px;
+    opacity: .35;
+    transition: opacity .25s ease;
+  }
+
+  .intro-desc > div{
+    max-width:700px;
+    margin: 10px;
+  }
+  .user-name{
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .user-detail{
+    padding-top: 5px;
+    top:-8px;
+    position: relative;
+  }
+  hr{
+    border-width: medium;
+    border-color: black;
+    display: block;
+    top: -10px;
+    position: relative;
+  }
+
+
+}
+/* for mobile*/
+@media screen and (max-width: 600px){
+body::before{
+  content: "this site doesnot support mobile view. open in desktop";
+  font-size: 2em;
+  color: red;
+}
+section{
+  display: none;
+}
+}
